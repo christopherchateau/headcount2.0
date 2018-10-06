@@ -1,12 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Card matches the snapshot 1`] = `
+exports[`ComparedCard matches the snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Card
-    display={true}
+  Symbol(enzyme.__unrendered__): <ComparedCard
     handleCardClick={[Function]}
-    location="Colorado"
+    location="COLORADO"
     stats={
         Object {
             "2004": 0,
@@ -30,7 +29,7 @@ ShallowWrapper {
         <h3
           className="school-name"
 >
-          Colorado
+          COLORADO
 </h3>,
         Array [
           <div>
@@ -47,7 +46,7 @@ ShallowWrapper {
 </div>,
         ],
       ],
-      "className": "card",
+      "className": "compared-card",
       "onClick": [Function],
     },
     "ref": null,
@@ -57,11 +56,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Colorado",
+          "children": "COLORADO",
           "className": "school-name",
         },
         "ref": null,
-        "rendered": "Colorado",
+        "rendered": "COLORADO",
         "type": "h3",
       },
       Object {
@@ -130,7 +129,7 @@ ShallowWrapper {
           <h3
             className="school-name"
 >
-            Colorado
+            COLORADO
 </h3>,
           Array [
             <div>
@@ -147,7 +146,7 @@ ShallowWrapper {
 </div>,
           ],
         ],
-        "className": "card",
+        "className": "compared-card",
         "onClick": [Function],
       },
       "ref": null,
@@ -157,11 +156,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Colorado",
+            "children": "COLORADO",
             "className": "school-name",
           },
           "ref": null,
-          "rendered": "Colorado",
+          "rendered": "COLORADO",
           "type": "h3",
         },
         Object {
@@ -221,24 +220,14 @@ ShallowWrapper {
       "type": "section",
     },
   ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-    "attachTo": undefined,
-    "hydrateIn": undefined,
-  },
+  Symbol(enzyme.__options__): <ComparedCard
+    handleCardClick={[Function]}
+    location="ACADEMY 20"
+    stats={
+        Object {
+            "2004": 0,
+          }
+    }
+/>,
 }
 `;

@@ -2,11 +2,19 @@
 
 body {
   background-color: lightblue;
-  background-image: url('./yellow-paper.jpg')
+  background-image: url('./images/yellow-paper.jpg');
+  background-attachment: fixed;
 }
 
-.main-logo {
+.main-logo,
+.instructions {
   font-family: "Permanent Marker", cursive;
   text-align: center;
-  font-size: 75px;
+  font-size: 64px;
+  margin: 0;
+}
+
+.instructions {
+  font-size: 40px;
+  margin: 4px;
 }

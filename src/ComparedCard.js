@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import checkIcon from "./images/checked.svg";
 import cancelIcon from "./images/cancel.svg";
-import "./Card.css";
+import "./ComparedCard.css";
 
-const Card = ({ location, stats, display, handleCardClick }) => {
+const ComparedCard = ({ location, stats, handleCardClick }) => {
   const years = Object.keys(stats);
   const cardData = years.map(year => {
     return (
@@ -22,17 +22,17 @@ const Card = ({ location, stats, display, handleCardClick }) => {
   });
 
   return (
-    <section className={display ? "card" : "hide"} onClick={() => handleCardClick(location)}>
+    <section className="compared-card" onClick={() => handleCardClick(location)}>
       <h3 className="school-name">{location}</h3>
       {cardData}
     </section>
   );
 };
 
-Card.propTypes = {
+ComparedCard.propTypes = {
   location: PropTypes.string.isRequired,
   stats: PropTypes.object.isRequired,
-  handleCardClick: PropTypes.func,
+  handleCardClick: PropTypes.func.isRequired,
 };
 
-export default Card;
+export default ComparedCard;

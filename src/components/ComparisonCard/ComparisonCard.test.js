@@ -1,5 +1,5 @@
 import React from "react";
-import ComparisonCard from "./ComparisonCard";
+import ComparisonCard from "./index";
 import { shallow } from "enzyme";
 
 describe("ComparisonCard", () => {

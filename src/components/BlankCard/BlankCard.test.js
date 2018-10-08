@@ -1,5 +1,5 @@
 import React from "react";
-import BlankCard from "./BlankCard";
+import BlankCard from "./index";
 import { shallow } from "enzyme";
 
 it("matches the snapshot", () => {

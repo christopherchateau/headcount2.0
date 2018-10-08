@@ -1,8 +1,7 @@
+# HeadCount 2.0
+
 # Check out the site on [GitHub Pages](https://christopherchateau.github.io/headcount2.0/)!
  
-
-
-# HeadCount 2.0
 
 HeadCount 2.0 is a project designed to challenge your skills at manipulating data and creating small, reusable React components.
 

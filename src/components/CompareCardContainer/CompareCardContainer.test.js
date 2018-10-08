@@ -30,4 +30,10 @@ describe("CompareCardContainer", () => {
   it("should render two ComparedCards", () => {
     expect(wrapper.find(CompardCard).length).toEqual(2);
   });
+
+  it("should call handleCardClick on click", () => {
+    wrapper.find('.compared-card').simulate('click')
+
+    expect(handleMockCardClick.mock.calls.length).toEqual(1);
+  });
 });

@@ -1,3 +1,6 @@
+[Check out the site on GitHub Pages!](https://christopherchateau.github.io/headcount2.0/)
+ 
+
 # HeadCount 2.0
 
 HeadCount 2.0 is a project designed to challenge your skills at manipulating data and creating small, reusable React components.
@@ -12,7 +15,7 @@ You will start the project by importing files containing various educational sta
 - Write meaningful, comprehensive unit and integration tests.
 
 ## Desktop View
- 
+
 ![Desktop screenshot 1](https://github.com/christopherchateau/headcount2.0/blob/master/src/images/Headcount-Desktop-Screenshot-1.png?raw=true)
 
 ![Desktop screenshot 2](https://github.com/christopherchateau/headcount2.0/blob/master/src/images/Headcount-Desktop-Screenshot-2.png?raw=true)

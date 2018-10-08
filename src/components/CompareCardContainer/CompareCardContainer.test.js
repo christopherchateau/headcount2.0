@@ -1,6 +1,6 @@
 import React from "react";
-import CompareCardContainer from "./CompareCardContainer";
-import CompardCard from "./ComparedCard";
+import CompareCardContainer from "./index";
+import CompardCard from "../ComparedCard/index";
 import { shallow } from "enzyme";
 
 describe("CompareCardContainer", () => {

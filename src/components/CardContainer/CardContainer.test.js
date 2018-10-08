@@ -1,6 +1,6 @@
 import React from "react";
-import CardContainer from "./CardContainer";
-import Card from "./Card";
+import CardContainer from "./index";
+import Card from "../Card/index";
 import { shallow } from "enzyme";
 
 describe("CardContainer", () => {

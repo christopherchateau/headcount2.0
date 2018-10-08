@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./index";
 import { shallow } from "enzyme";
-import DistrictRepository from "./helper.js";
-import kinderData from "./data/kindergartners_in_full_day_program.js";
-import App from "./App";
+import DistrictRepository from "../../helper.js";
+import kinderData from "../../data/kindergartners_in_full_day_program.js";
 
 describe("App component", () => {
   let wrapper;

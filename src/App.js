@@ -6,7 +6,7 @@ import CompareCardContainer from "./CompareCardContainer";
 import Search from "./Search";
 import "./App.css";
 
-const allSchools = new DistrictRepository(kinderData);
+const allDistricts = new DistrictRepository(kinderData);
 
 class App extends Component {
   state = {
@@ -17,12 +17,12 @@ class App extends Component {
   };
 
   componentDidMount = () => {
-    const schoolData = allSchools.findAllMatches();
+    const schoolData = allDistricts.findAllMatches();
     this.setState({ schoolData });
   };
 
   handleSearch = input => {
-    const schoolData = allSchools.findAllMatches();
+    const schoolData = allDistricts.findAllMatches();
     const districtDirectory = Object.keys(schoolData);
     input
       ? this.toggleSearchDisplay(schoolData, input, districtDirectory)
@@ -32,7 +32,7 @@ class App extends Component {
   };
 
   toggleSearchDisplay = (schoolData, input, districtDirectory) => {
-    const searchResults = allSchools.findAllMatches(input);
+    const searchResults = allDistricts.findAllMatches(input);
     districtDirectory.forEach(district => {
       searchResults.includes(district)
         ? (schoolData[district].display = true)
@@ -47,34 +47,34 @@ class App extends Component {
   };
 
   handleCardClick = location => {
-    const clickedDisctrict = allSchools.stats[location];
+    const clickedDistrict = allDistricts.stats[location];
     let { comparedCards } = this.state;
 
-    if (clickedDisctrict.clicked !== false) {
-      this.handleComparedCardClick(clickedDisctrict);
+    if (clickedDistrict.clicked !== false) {
+      this.handleComparedCardClick(clickedDistrict);
       return;
     }
-    this.addClickedProp(clickedDisctrict, comparedCards);
+    this.addClickedProp(clickedDistrict, comparedCards);
     this.setState({ comparedCards });
     this.checkComparedCards();
   };
 
-  addClickedProp = (clickedDisctrict, comparedCards) => {
+  addClickedProp = (clickedDistrict, comparedCards) => {
     for (let index = 0; index < 2; index++) {
       if (!Object.keys(comparedCards[index]).length) {
-        clickedDisctrict.clicked = index;
-        comparedCards[index] = clickedDisctrict;
+        clickedDistrict.clicked = index;
+        comparedCards[index] = clickedDistrict;
         break;
       }
     }
   };
 
-  handleComparedCardClick = clickedDisctrict => {
+  handleComparedCardClick = clickedDistrict => {
     const comparedCards = this.state.comparedCards;
     const schoolData = this.state.schoolData;
 
-    comparedCards[clickedDisctrict.clicked] = {};
-    schoolData[clickedDisctrict.location].clicked = false;
+    comparedCards[clickedDistrict.clicked] = {};
+    schoolData[clickedDistrict.location].clicked = false;
 
     this.setState({ schoolData, comparedCards });
     this.checkComparedCards();
@@ -90,7 +90,7 @@ class App extends Component {
 
   prepareComparisonCard = comparedCards => {
     const instructions = "click either card below to remove it";
-    const comparedAvg = allSchools.compareDistrictAverages(
+    const comparedAvg = allDistricts.compareDistrictAverages(
       comparedCards[0].location,
       comparedCards[1].location
     );

@@ -3,7 +3,7 @@ import CardContainer from "./CardContainer";
 import Card from "./Card";
 import { shallow } from "enzyme";
 
-describe("IdeaContainer", () => {
+describe("CardContainer", () => {
   let wrapper;
   let mockData;
   let handleMockCardClick;
@@ -25,9 +25,7 @@ describe("IdeaContainer", () => {
       }
     };
     wrapper = shallow(
-      <CardContainer 
-        cards={mockData} 
-        handleCardClick={handleMockCardClick} />
+      <CardContainer cards={mockData} handleCardClick={handleMockCardClick} />
     );
   });
 

@@ -13,9 +13,9 @@ HeadCount 2.0 is a project designed to challenge your skills at manipulating dat
 
 ## Desktop View
 
-<img src="https://github.com/christopherchateau/headcount2.0/blob/master/src/images/Headcount-Mobile-Screenshot-1.png" width="800px" />
+<img src="https://github.com/christopherchateau/headcount2.0/blob/master/src/images/Headcount-Desktop-Screenshot-1.png" width="800px" />
 
-<img src="https://github.com/christopherchateau/headcount2.0/blob/master/src/images/Headcount-Mobile-Screenshot-2.png" width="800px" />
+<img src="https://github.com/christopherchateau/headcount2.0/blob/master/src/images/Headcount-Desktop-Screenshot-2.png" width="800px" />
 
 ## Mobile View
 

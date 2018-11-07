@@ -13,17 +13,15 @@ HeadCount 2.0 is a project designed to challenge your skills at manipulating dat
 
 ## Desktop View
 
-![Desktop screenshot 1](https://github.com/christopherchateau/headcount2.0/blob/master/src/images/Headcount-Desktop-Screenshot-1.png?raw=true)
+<img src="https://github.com/christopherchateau/headcount2.0/blob/master/src/images/Headcount-Mobile-Screenshot-1.png" width="800px" />
 
-![Desktop screenshot 2](https://github.com/christopherchateau/headcount2.0/blob/master/src/images/Headcount-Desktop-Screenshot-2.png?raw=true)
-
+<img src="https://github.com/christopherchateau/headcount2.0/blob/master/src/images/Headcount-Mobile-Screenshot-2.png" width="800px" />
 
 ## Mobile View
 
-![Mobile screenshot 1](https://github.com/christopherchateau/headcount2.0/blob/master/src/images/Headcount-Mobile-Screenshot-1.png?raw=true)
+<img src="https://github.com/christopherchateau/headcount2.0/blob/master/src/images/Headcount-Mobile-Screenshot-1.png" width="400px" />
 
-![Mobile screenshot 2](https://github.com/christopherchateau/headcount2.0/blob/master/src/images/Headcount-Mobile-Screenshot-2.png?raw=true)
-
+<img src="https://github.com/christopherchateau/headcount2.0/blob/master/src/images/Headcount-Mobile-Screenshot-2.png" width="400px" />
 
 # Original Project Assignment:
 
